@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "307486966193",
+    "firebase_url": "https://digidiary-e0fc4.firebaseio.com",
+    "project_id": "digidiary-e0fc4",
+    "storage_bucket": "digidiary-e0fc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307486966193:android:616cdbf364064a3db03d90",
+        "android_client_info": {
+          "package_name": "jbox.skillz.digidiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307486966193-c0lh33pjrqg0477ha1hgogp2f5tsm7p8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "jbox.skillz.digidiary",
+            "certificate_hash": "41c2319dba35b774eda581a07107c42547435166"
+          }
+        },
+        {
+          "client_id": "307486966193-lbm9tk49ncfs2674t690p2jvo60rojbb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBUCLZ2-MLc87TurJU093PZGzFB2ZdidY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307486966193-lbm9tk49ncfs2674t690p2jvo60rojbb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

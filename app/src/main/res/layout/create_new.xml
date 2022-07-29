@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4.3"
+    android:background="@color/white"
+    tools:context=".CreateNew">
+
+    <include layout="@layout/stylish_app_bar_layout"
+        android:layout_weight="0.3"
+    android:id="@+id/create_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <TextView
+        android:id="@+id/new_date_time"
+        android:singleLine="true"
+        android:gravity="fill_vertical"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="date and  time"
+        android:background="@drawable/shadow_black"
+        android:textColor="@color/blu"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <EditText
+        android:id="@+id/new_note_title"
+        android:singleLine="true"
+        android:gravity="fill_vertical"
+        android:layout_weight="0.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="set An Appropriate Title"
+        android:background="@drawable/shadow_black"
+        android:textColor="@color/red"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/new_note"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.9"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/shadow_red"
+        android:textColorHint="@color/dark">
+
+        <EditText
+            android:id="@+id/diary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="spell your thoughts !"
+            android:textColor="@color/blu" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/new_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="@color/white"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn"/>
+        <Button
+            android:id="@+id/new_create"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="create"
+            android:textColor="@color/red"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_weight="1.3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="bottom">
+
+        <TextView
+            android:id="@+id/login_app_name"
+            android:fontFamily="cursive"
+            android:text="Digi Diary"
+            android:textColor="@color/red"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"/>
+        <TextView
+            android:layout_below="@+id/login_app_name"
+            android:fontFamily="cursive"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Welcome to Digi Diary"
+            android:textColor="@color/blu"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="2.2"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="@color/dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shadow_black"
+                android:hint="your_email"
+                android:textColor="@color/blu"
+                android:layout_marginTop="3dp"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"/>
+
+            <EditText
+                android:id="@+id/login_password"
+                android:layout_below="@+id/login_email"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:textColorHint="@color/dark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="your_password"
+                android:textColor="@color/red"
+                android:padding="10dp"
+                android:background="@drawable/shadow_black"
+                android:inputType="textPassword"/>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_below="@+id/login_password"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="30dp"
+                android:text="login"
+                android:textColor="@color/red"
+                android:background="@drawable/shadow_black"
+                />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_height="0dp">
+
+        <TextView
+            android:id="@+id/no_account_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No account yet?"
+            android:textSize="17dp"
+            android:textColor="@color/blu"
+            />
+        <TextView
+            android:id="@+id/login_new_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create one"
+            android:textSize="17dp"
+            android:textColor="@color/red"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

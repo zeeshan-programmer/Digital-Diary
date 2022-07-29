@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:weightSum="4"
+    tools:context=".EditProfileActivity">
+
+    <include layout="@layout/stylish_app_bar_layout"
+        android:id="@+id/edit_pf_bar"/>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/pf_back">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/edit_profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            app:civ_border_color="@color/red"
+            app:civ_border_width="3dp"/>
+        <ImageView
+            android:id="@+id/edit_pf_img_btn"
+            android:gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:foreground="@drawable/edit_img_24dp"
+            android:background="@drawable/btn"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/edit_profile_image"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="2.4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/shadow_back"
+        android:layout_margin="5dp"
+
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_display_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/red"
+            android:layout_margin="5dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:textColor="@color/blu"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_loc"
+            android:layout_margin="5dp"
+            android:layout_below="@id/edit_display_name"
+            android:textColorHint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Location"
+                android:textColor="@color/blu"
+                android:inputType="text"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_email"
+            android:layout_margin="5dp"
+            android:layout_below="@id/edit_loc"
+            android:textColorHint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:enabled="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textColor="@color/blu"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/edit_song"
+            android:layout_margin="5dp"
+            android:layout_below="@id/edit_email"
+            android:textColorHint="@color/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Favourite Song"
+                android:textColor="@color/blu"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_weight="0.6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="5dp"
+
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/edit_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:textColor="@color/white"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn"/>
+        <Button
+            android:id="@+id/edit_update"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:textColor="@color/red"
+            android:layout_margin="2dp"
+            android:background="@drawable/btn"/>
+
+    </LinearLayout>
+
+</LinearLayout>

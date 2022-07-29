@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shadow_red">
+
+    <TextView
+        android:id="@+id/existing_list_layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="title of the note"
+        android:textColor="@color/blu"
+        android:background="@drawable/shadow_black"/>
+
+    <TextView
+        android:id="@+id/existing_list_layout_date"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/existing_list_layout_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="18 August 2020"
+        android:textColor="@color/red"
+        android:background="@drawable/shadow_black" />
+
+    <TextView
+        android:id="@+id/existing_list_layout_note"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/existing_list_layout_date"
+        android:layout_margin="5dp"
+        android:padding="20dp"
+        android:background="@drawable/shadow_red"
+        android:textColorHint="@color/dark"
+        android:hint="note"
+        android:textColor="@color/blu"
+        android:textSize="18dp" />
+
+</RelativeLayout>
